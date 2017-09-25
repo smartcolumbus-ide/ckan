@@ -5,18 +5,18 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <meta content="object" property="og:type">
 <meta content="GitLab" property="og:site_name">
-<meta content="usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css · master · smartcolumbus-ide / dataportal / ckan" property="og:title">
+<meta content="usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css · master · smartcolumbus-ide / dataportal / ckan" property="og:title">
 <meta content="GitLab.com" property="og:description">
 <meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
 <meta content="64" property="og:image:width">
 <meta content="64" property="og:image:height">
-<meta content="https://gitlab.com/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css" property="og:url">
+<meta content="https://gitlab.com/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css" property="og:url">
 <meta content="summary" property="twitter:card">
-<meta content="usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css · master · smartcolumbus-ide / dataportal / ckan" property="twitter:title">
+<meta content="usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css · master · smartcolumbus-ide / dataportal / ckan" property="twitter:title">
 <meta content="GitLab.com" property="twitter:description">
 <meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="twitter:image">
 
-<title>usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css · master · smartcolumbus-ide / dataportal / ckan · GitLab</title>
+<title>usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css · master · smartcolumbus-ide / dataportal / ckan · GitLab</title>
 <meta content="GitLab.com" name="description">
 <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-075eba76312e8421991a0c1f89a89ee81678bcde72319dd3e8047e2a47cd3a42.ico" id="favicon" />
 <link rel="stylesheet" media="all" href="/assets/application-61d4cb7e100f2fac8ccaeac5e18d08f97554f0639e84004165d6f9697cfbe08c.css" />
@@ -46,7 +46,7 @@ window.gon={};gon.api_version="v4";gon.default_avatar_url="https:\/\/gitlab.com\
 </script>
 
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="jbIswVoqtbvzRdcHphXuMhiNXD73jFyzbNWLYk/ZkB7aN15PG9Oiagoom4AfnKutNpVgyoM3waNJmetQlod4pA==" />
+<meta name="csrf-token" content="etE4RGQrxMbYCtgBVeVIzz9DYDpEbBKvAobU6IRGJxAtVErKJdLTFyFnlIbsbA1QEVtczjDXj78nyrTaXRjPqg==" />
 <meta content="origin-when-cross-origin" name="referrer">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 <meta content="#474D57" name="theme-color">
@@ -546,7 +546,7 @@ Activity
 <div class="tree-ref-container">
 <div class="tree-ref-holder">
 <form class="project-refs-form" action="/smartcolumbus-ide/dataportal/ckan/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="destination" id="destination" value="blob" />
-<input type="hidden" name="path" id="path" value="usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css" />
+<input type="hidden" name="path" id="path" value="usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css" />
 <div class="dropdown">
 <button class="dropdown-menu-toggle js-project-refs-dropdown" type="button" data-toggle="dropdown" data-selected="master" data-ref="master" data-refs-url="/smartcolumbus-ide/dataportal/ckan/refs" data-field-name="ref" data-submit-form-on-click="true" data-visit="true"><span class="dropdown-toggle-text ">master</span><i aria-hidden="true" data-hidden="true" class="fa fa-chevron-down"></i></button>
 <div class="dropdown-menu dropdown-menu-selectable git-revision-dropdown">
@@ -569,7 +569,7 @@ Activity
 <a href="/smartcolumbus-ide/dataportal/ckan/tree/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css">css</a>
 </li>
 <li>
-<a href="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css"><strong>main.css</strong>
+<a href="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css"><strong>red.min.css</strong>
 </a></li>
 </ul>
 </div>
@@ -577,7 +577,7 @@ Activity
 <a class="btn shortcuts-find-file" rel="nofollow" href="/smartcolumbus-ide/dataportal/ckan/find_file/master"><i aria-hidden="true" data-hidden="true" class="fa fa-search"></i>
 <span>Find file</span>
 </a>
-<div class="btn-group" role="group"><a class="btn js-blob-blame-link" href="/smartcolumbus-ide/dataportal/ckan/blame/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css">Blame</a><a class="btn" href="/smartcolumbus-ide/dataportal/ckan/commits/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css">History</a><a class="btn js-data-file-blob-permalink-url" href="/smartcolumbus-ide/dataportal/ckan/blob/8ed2de44a069f391e74c357912d8678a23938ff2/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css">Permalink</a></div>
+<div class="btn-group" role="group"><a class="btn js-blob-blame-link" href="/smartcolumbus-ide/dataportal/ckan/blame/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css">Blame</a><a class="btn" href="/smartcolumbus-ide/dataportal/ckan/commits/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css">History</a><a class="btn js-data-file-blob-permalink-url" href="/smartcolumbus-ide/dataportal/ckan/blob/8ed2de44a069f391e74c357912d8678a23938ff2/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css">Permalink</a></div>
 </div>
 </div>
 
@@ -618,18 +618,18 @@ aefcb876
 <div class="file-header-content">
 <i aria-hidden="true" data-hidden="true" class="fa fa-file-text-o fa-fw"></i>
 <strong class="file-title-name">
-main.css
+red.min.css
 </strong>
-<button class="btn btn-clipboard btn-transparent prepend-left-5" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent prepend-left-5" data-title="Copy file path to clipboard" data-clipboard-text="{&quot;text&quot;:&quot;usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css&quot;,&quot;gfm&quot;:&quot;`usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css`&quot;}" type="button" title="Copy file path to clipboard" aria-label="Copy file path to clipboard"><i aria-hidden="true" aria-hidden="true" data-hidden="true" class="fa fa-clipboard"></i></button>
+<button class="btn btn-clipboard btn-transparent prepend-left-5" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent prepend-left-5" data-title="Copy file path to clipboard" data-clipboard-text="{&quot;text&quot;:&quot;usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css&quot;,&quot;gfm&quot;:&quot;`usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css`&quot;}" type="button" title="Copy file path to clipboard" aria-label="Copy file path to clipboard"><i aria-hidden="true" aria-hidden="true" data-hidden="true" class="fa fa-clipboard"></i></button>
 <small>
-207 KB
+174 KB
 </small>
 </div>
 
 <div class="file-actions hidden-xs">
 
-<div class="btn-group" role="group"><button class="btn btn btn-sm js-copy-blob-source-btn" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn btn-sm js-copy-blob-source-btn" data-title="Copy source to clipboard" data-clipboard-target=".blob-content[data-blob-id=&#39;85709c0ba03a3915870a5d175b218a12ce86c41c&#39;]" type="button" title="Copy source to clipboard" aria-label="Copy source to clipboard"><i aria-hidden="true" aria-hidden="true" data-hidden="true" class="fa fa-clipboard"></i></button><a class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" title="Open raw" data-container="body" href="/smartcolumbus-ide/dataportal/ckan/raw/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css"><i aria-hidden="true" data-hidden="true" class="fa fa-file-code-o"></i></a></div>
-<div class="btn-group" role="group"><a class="btn btn-sm path-lock has-tooltip" data-state="lock" data-toggle="tooltip" title="" href="#">Lock</a><a class="btn js-edit-blob  btn-sm" href="/smartcolumbus-ide/dataportal/ckan/edit/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css">Edit</a><button name="button" type="submit" class="btn btn-default" data-target="#modal-upload-blob" data-toggle="modal">Replace</button><button name="button" type="submit" class="btn btn-remove" data-target="#modal-remove-blob" data-toggle="modal">Delete</button></div>
+<div class="btn-group" role="group"><button class="btn btn btn-sm js-copy-blob-source-btn" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn btn-sm js-copy-blob-source-btn" data-title="Copy source to clipboard" data-clipboard-target=".blob-content[data-blob-id=&#39;e383918e600ab46967de7f8f864ce4476c8af340&#39;]" type="button" title="Copy source to clipboard" aria-label="Copy source to clipboard"><i aria-hidden="true" aria-hidden="true" data-hidden="true" class="fa fa-clipboard"></i></button><a class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" title="Open raw" data-container="body" href="/smartcolumbus-ide/dataportal/ckan/raw/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css"><i aria-hidden="true" data-hidden="true" class="fa fa-file-code-o"></i></a></div>
+<div class="btn-group" role="group"><a class="btn btn-sm path-lock has-tooltip" data-state="lock" data-toggle="tooltip" title="" href="#">Lock</a><a class="btn js-edit-blob  btn-sm" href="/smartcolumbus-ide/dataportal/ckan/edit/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css">Edit</a><button name="button" type="submit" class="btn btn-default" data-target="#modal-upload-blob" data-toggle="modal">Replace</button><button name="button" type="submit" class="btn btn-remove" data-target="#modal-remove-blob" data-toggle="modal">Delete</button></div>
 </div>
 </div>
 <div class="js-file-fork-suggestion-section file-fork-suggestion hidden">
@@ -641,17 +641,17 @@ edit
 files in this project directly. Please fork this project,
 make your changes there, and submit a merge request.
 </span>
-<a class="js-fork-suggestion-button btn btn-grouped btn-inverted btn-new" rel="nofollow" data-method="post" href="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css">Fork</a>
+<a class="js-fork-suggestion-button btn btn-grouped btn-inverted btn-new" rel="nofollow" data-method="post" href="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css">Fork</a>
 <button class="js-cancel-fork-suggestion-button btn btn-grouped" type="button">
 Cancel
 </button>
 </div>
 
 <script id="js-file-lock" type="application/json">
-{"path":"usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css","toggle_path":"/smartcolumbus-ide/dataportal/ckan/path_locks/toggle"}
+{"path":"usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css","toggle_path":"/smartcolumbus-ide/dataportal/ckan/path_locks/toggle"}
 </script>
 
-<div class="blob-viewer" data-type="simple" data-url="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css?format=json&amp;viewer=simple">
+<div class="blob-viewer" data-type="simple" data-url="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css?format=json&amp;viewer=simple">
 <div class="text-center prepend-top-default append-bottom-default">
 <i aria-hidden="true" aria-label="Loading content…" class="fa fa-spinner fa-spin fa-2x"></i>
 </div>
@@ -668,16 +668,16 @@ Cancel
 <div class="modal-content">
 <div class="modal-header">
 <a class="close" data-dismiss="modal" href="#">×</a>
-<h3 class="page-title">Delete main.css</h3>
+<h3 class="page-title">Delete red.min.css</h3>
 </div>
 <div class="modal-body">
-<form class="form-horizontal js-delete-blob-form js-quick-submit js-requires-input" action="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="oaeEsCj2+R17DH5iKWq1VGCY+8LgUu5fP8kwe1WDRav2IvY+aQ/uzIJhMuWQ4/DLToDHNpTpc08ahVBJjN2tEQ==" /><div class="form-group commit_message-group">
-<label class="control-label" for="commit_message-13ba153f675a70de6560909ea69f038e">Commit message
+<form class="form-horizontal js-delete-blob-form js-quick-submit js-requires-input" action="/smartcolumbus-ide/dataportal/ckan/blob/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="eI3KU2jB0Da1zcUmc9nhyHBeA5qwmwbMWA7kF6YQzKkvCLjdKTjH50ygiaHKUKRXXkY/bsQgm9x9QoQlf04kEw==" /><div class="form-group commit_message-group">
+<label class="control-label" for="commit_message-197dd2abcd30c6a9e68d3dbb650715f2">Commit message
 </label><div class="col-sm-10">
 <div class="commit-message-container">
 <div class="max-width-marker"></div>
-<textarea name="commit_message" id="commit_message-13ba153f675a70de6560909ea69f038e" class="form-control js-commit-message" placeholder="Delete main.css" required="required" rows="3">
-Delete main.css</textarea>
+<textarea name="commit_message" id="commit_message-197dd2abcd30c6a9e68d3dbb650715f2" class="form-control js-commit-message" placeholder="Delete red.min.css" required="required" rows="3">
+Delete red.min.css</textarea>
 </div>
 </div>
 </div>
@@ -688,7 +688,7 @@ Delete main.css</textarea>
 <input type="text" name="branch_name" id="branch_name" value="master" required="required" class="form-control js-branch-name ref-name" />
 <div class="js-create-merge-request-container">
 <div class="checkbox">
-<label for="create_merge_request-f99fc6e23c786114c8a3731cf9856fc6"><input type="checkbox" name="create_merge_request" id="create_merge_request-f99fc6e23c786114c8a3731cf9856fc6" value="1" class="js-create-merge-request" checked="checked" />
+<label for="create_merge_request-abc3c4721553626b208dfc10eb83342f"><input type="checkbox" name="create_merge_request" id="create_merge_request-abc3c4721553626b208dfc10eb83342f" value="1" class="js-create-merge-request" checked="checked" />
 Start a <strong>new merge request</strong> with these changes
 </label></div>
 
@@ -713,10 +713,10 @@ Start a <strong>new merge request</strong> with these changes
 <div class="modal-content">
 <div class="modal-header">
 <a class="close" data-dismiss="modal" href="#">×</a>
-<h3 class="page-title">Replace main.css</h3>
+<h3 class="page-title">Replace red.min.css</h3>
 </div>
 <div class="modal-body">
-<form class="js-quick-submit js-upload-blob-form form-horizontal" data-method="put" action="/smartcolumbus-ide/dataportal/ckan/update/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/main.css" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="NHXU63s5s2uyo0X6Ko3kNpkExuntMQY2KeleJVm7QmZj8KZlOsCkukvOCX2TBKGptxz6HZmKmyYMpT4XgOWq3A==" /><div class="dropzone">
+<form class="js-quick-submit js-upload-blob-form form-horizontal" data-method="put" action="/smartcolumbus-ide/dataportal/ckan/update/master/usr/lib/ckan/default/src/ckan/ckan/public/base/css/red.min.css" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="78wE+fik0BsvfQ+9z1NGUvbZHFe+n6/sH2xJgvEzECS4SXZ3uV3HytYQQzp22gPN2MEgo8okMvw6ICmwKG34ng==" /><div class="dropzone">
 <div class="dropzone-previews blob-upload-dropzone-previews">
 <p class="dz-message light">
 Attach a file by drag &amp; drop or <a class="markdown-selector" href="#">click to upload</a>
@@ -726,12 +726,12 @@ Attach a file by drag &amp; drop or <a class="markdown-selector" href="#">click 
 <br>
 <div class="dropzone-alerts alert alert-danger data" style="display:none"></div>
 <div class="form-group commit_message-group">
-<label class="control-label" for="commit_message-a9757919c73ff33e800360ba5901a677">Commit message
+<label class="control-label" for="commit_message-3d9db221a5f601af9c399d26ff5c941b">Commit message
 </label><div class="col-sm-10">
 <div class="commit-message-container">
 <div class="max-width-marker"></div>
-<textarea name="commit_message" id="commit_message-a9757919c73ff33e800360ba5901a677" class="form-control js-commit-message" placeholder="Replace main.css" required="required" rows="3">
-Replace main.css</textarea>
+<textarea name="commit_message" id="commit_message-3d9db221a5f601af9c399d26ff5c941b" class="form-control js-commit-message" placeholder="Replace red.min.css" required="required" rows="3">
+Replace red.min.css</textarea>
 </div>
 </div>
 </div>
@@ -742,7 +742,7 @@ Replace main.css</textarea>
 <input type="text" name="branch_name" id="branch_name" value="master" required="required" class="form-control js-branch-name ref-name" />
 <div class="js-create-merge-request-container">
 <div class="checkbox">
-<label for="create_merge_request-aa3aa628230ca0d9d56bb017023242d1"><input type="checkbox" name="create_merge_request" id="create_merge_request-aa3aa628230ca0d9d56bb017023242d1" value="1" class="js-create-merge-request" checked="checked" />
+<label for="create_merge_request-b9e96520654f2bfd0be02b7c60afc5da"><input type="checkbox" name="create_merge_request" id="create_merge_request-b9e96520654f2bfd0be02b7c60afc5da" value="1" class="js-create-merge-request" checked="checked" />
 Start a <strong>new merge request</strong> with these changes
 </label></div>
 
