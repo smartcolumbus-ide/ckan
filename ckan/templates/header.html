@@ -52,8 +52,8 @@
         {% else %}
           <nav style="float:left">
 		 
-		  <a href="{{ h.url_for('http://poc.smartcolumbuside.com/') }}"><img src="../../../base/images/SMRTcolumbus_PMS_002.jpg" style="padding-bottom: 5px;"></a>
-		  <a href="{{ h.url_for('http://poc.smartcolumbuside.com/') }}"><img src="../../../base/images/170724_SmartColumbus_Namemark-01.jpg" style="padding-bottom: 5px;"></a>
+		  <a href="{{ h.url_for('http://dev.smartcolumbuside.com/') }}"><img src="../../../base/images/SMRTcolumbus_PMS_002.jpg" style="padding-bottom: 5px;"></a>
+		  <a href="{{ h.url_for('http://dev.smartcolumbuside.com/') }}"><img src="../../../base/images/170724_SmartColumbus_Namemark-01.jpg" style="padding-bottom: 5px;"></a>
 		 
           <!--  <ul class="unstyled">
 		   
@@ -68,12 +68,12 @@
 		  <div style="float:right;font-family:'Gotham Bold';padding-top: 25px;">
 		  
 		  <ul>
-		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com') }}">{{ _('HOME') }}</a></li>
-		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://catalog.smartcolumbuside.com/dataset') }}">{{ _('DATASETS') }}</a></li>
-		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/developers/') }}">{{ _('DEVELOPERS') }}</a></li>
-		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/analytics/') }}">{{ _('ANALYTICS') }}</a></li>
-		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/contact/') }}">{{ _('CONTACT') }}</a></li>
-		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/Login/') }}">{{ _('LOGIN') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/') }}">{{ _('HOME') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('https://ckan.dev.smartcolumbuside.com/dataset') }}">{{ _('DATASETS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/developers/') }}">{{ _('DEVELOPERS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/analytics/') }}">{{ _('ANALYTICS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/contact/') }}">{{ _('CONTACT') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/Login/') }}">{{ _('LOGIN') }}</a></li>
 
 </ul>
 		  </div>
@@ -99,10 +99,10 @@
 
       {% block header_logo %}
         {% if g.site_logo %}
-          <a class="logo" href="{{ h.url_for('home') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+         <!-- <a class="logo" href="{{ h.url_for('home') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a> -->
         {% else %}
           <h1>
-            <a href="{{ h.url_for('home') }}">{{ g.site_title }}</a>
+           <!-- <a href="{{ h.url_for('home') }}">{{ g.site_title }}</a> -->
           </h1>
           {% if g.site_description %}<h2>{{ g.site_description }}</h2>{% endif %}
         {% endif %}
