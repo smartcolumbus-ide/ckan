@@ -285,8 +285,18 @@ def update_config():
     # any Pylons config options)
 
     # Initialize SQLAlchemy
-    engine = sqlalchemy.engine_from_config(config, client_encoding='utf8')
-    model.init_model(engine)
+    #engine = sqlalchemy.engine_from_config(config, client_encoding='utf8')
+    #model.init_model(engine)
+
+	#added from poc
+	# for postgresql we want to enforce utf-8
+    sqlalchemy_url = config.get('sqlalchemy.url', '')
+    if sqlalchemy_url.startswith('postgresql://'):
+        extras = {'client_encoding': 'utf8'}
+    else:
+        extras = {}
+
+    engine = sqlalchemy.engine_from_config(config, 'sqlalchemy.', **extras)
 
     if not model.meta.engine:
         model.init_model(engine)
