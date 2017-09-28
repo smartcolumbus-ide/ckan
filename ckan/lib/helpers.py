@@ -186,7 +186,7 @@ def redirect_to(*args, **kw):
     if is_flask_request():
         return _flask_redirect(_url)
     else:
-        return _routes_redirect_to(urllib.quote(_url))
+        return _routes_redirect_to(_url)
 
 @maintain.deprecated('h.url is deprecated please use h.url_for')
 @core_helper
