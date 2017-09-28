@@ -189,7 +189,8 @@ def redirect_to(*args, **kw):
         print _url
         print bytes(_url)
         print str(_url)
-        return _routes_redirect_to(_url)
+        print _routes_redirect_to(_url)
+        return str(_routes_redirect_to(_url))
 
 
 @maintain.deprecated('h.url is deprecated please use h.url_for')
