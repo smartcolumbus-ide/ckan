@@ -164,8 +164,6 @@ def redirect_to(*args, **kw):
     if are_there_flash_messages():
         kw['__no_cache__'] = True
     
-    return _redirect_to(url_for(*args, **kw))   
-    '''
     # Routes router doesn't like unicode args
     uargs = map(lambda arg: str(arg) if isinstance(arg, unicode) else arg,
                 args)
@@ -189,8 +187,6 @@ def redirect_to(*args, **kw):
         return _flask_redirect(_url)
     else:
         return _routes_redirect_to(_url)
-        '''
- 
 
 @maintain.deprecated('h.url is deprecated please use h.url_for')
 @core_helper
