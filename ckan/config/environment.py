@@ -16,13 +16,11 @@ import ckan.model as model
 import ckan.plugins as p
 import ckan.lib.helpers as helpers
 import ckan.lib.app_globals as app_globals
-from ckan.lib.redis import is_redis_available
 import ckan.lib.render as render
 import ckan.lib.search as search
 import ckan.logic as logic
 import ckan.authz as authz
 import ckan.lib.jinja_extensions as jinja_extensions
-from ckan.lib.i18n import build_js_translations
 
 from ckan.common import _, ungettext, config
 from ckan.exceptions import CkanConfigurationException
@@ -69,21 +67,9 @@ def load_environment(global_conf, app_conf):
 
     # Pylons paths
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-    valid_base_public_folder_names = ['public', 'public-bs2']
-    static_files = app_conf.get('ckan.base_public_folder', 'public')
-    app_conf['ckan.base_public_folder'] = static_files
-
-    if static_files not in valid_base_public_folder_names:
-        raise CkanConfigurationException(
-            'You provided an invalid value for ckan.base_public_folder. '
-            'Possible values are: "public" and "public-bs2".'
-        )
-
-    log.info('Loading static files from %s' % static_files)
     paths = dict(root=root,
                  controllers=os.path.join(root, 'controllers'),
-                 static_files=os.path.join(root, static_files),
+                 static_files=os.path.join(root, 'public'),
                  templates=[])
 
     # Initialize main CKAN config object
@@ -110,20 +96,12 @@ def load_environment(global_conf, app_conf):
     # load all CKAN plugins
     p.load_all()
 
-    # Check Redis availability
-    if not is_redis_available():
-        log.critical('Could not connect to Redis.')
-
     app_globals.reset()
 
     # issue #3260: remove idle transaction
     # Session that was used for getting all config params nor committed,
     # neither removed and we have idle connection as result
     model.Session.commit()
-
-    # Build JavaScript translations. Must be done after plugins have
-    # been loaded.
-    build_js_translations()
 
 
 # A mapping of config settings that can be overridden by env vars.
@@ -133,7 +111,6 @@ CONFIG_FROM_ENV_VARS = {
     'sqlalchemy.url': 'CKAN_SQLALCHEMY_URL',
     'ckan.datastore.write_url': 'CKAN_DATASTORE_WRITE_URL',
     'ckan.datastore.read_url': 'CKAN_DATASTORE_READ_URL',
-    'ckan.redis.url': 'CKAN_REDIS_URL',
     'solr_url': 'CKAN_SOLR_URL',
     'ckan.site_id': 'CKAN_SITE_ID',
     'ckan.site_url': 'CKAN_SITE_URL',
@@ -232,19 +209,7 @@ def update_config():
     helpers.load_plugin_helpers()
     config['pylons.h'] = helpers.helper_functions
 
-    # Templates and CSS loading from configuration
-    valid_base_templates_folder_names = ['templates', 'templates-bs2']
-    templates = config.get('ckan.base_templates_folder', 'templates')
-    config['ckan.base_templates_folder'] = templates
-
-    if templates not in valid_base_templates_folder_names:
-        raise CkanConfigurationException(
-            'You provided an invalid value for ckan.base_templates_folder. '
-            'Possible values are: "templates" and "templates-bs2".'
-        )
-
-    jinja2_templates_path = os.path.join(root, templates)
-    log.info('Loading templates from %s' % jinja2_templates_path)
+    jinja2_templates_path = os.path.join(root, 'templates')
     template_paths = [jinja2_templates_path]
 
     extra_template_paths = config.get('extra_template_paths', '')
@@ -280,14 +245,23 @@ def update_config():
     env.install_gettext_callables(_, ungettext, newstyle=True)
     # custom filters
     env.filters['empty_and_escape'] = jinja_extensions.empty_and_escape
+    env.filters['truncate'] = jinja_extensions.truncate
     config['pylons.app_globals'].jinja_env = env
 
     # CONFIGURATION OPTIONS HERE (note: all config options will override
     # any Pylons config options)
 
-    # Initialize SQLAlchemy
-    engine = sqlalchemy.engine_from_config(config, client_encoding='utf8')
-    model.init_model(engine)
+    # for postgresql we want to enforce utf-8
+    sqlalchemy_url = config.get('sqlalchemy.url', '')
+    if sqlalchemy_url.startswith('postgresql://'):
+        extras = {'client_encoding': 'utf8'}
+    else:
+        extras = {}
+
+    engine = sqlalchemy.engine_from_config(config, 'sqlalchemy.', **extras)
+
+    if not model.meta.engine:
+        model.init_model(engine)
 
     for plugin in p.PluginImplementations(p.IConfigurable):
         plugin.configure(config)
@@ -312,8 +286,6 @@ def update_config():
     except sqlalchemy.exc.InternalError:
         # The database is not initialised.  Travis hits this
         pass
-
-    # Close current session and open database connections to ensure a clean
-    # clean environment even if an error occurs later on
+    # if an extension or our code does not finish
+    # transaction properly db cli commands can fail
     model.Session.remove()
-    model.Session.bind.dispose()
