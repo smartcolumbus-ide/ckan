@@ -161,6 +161,7 @@ def redirect_to(*args, **kw):
         toolkit.redirect_to('/some/other/path')
 
     '''
+    ''' Richard commented out
     if are_there_flash_messages():
         kw['__no_cache__'] = True
 
@@ -187,7 +188,8 @@ def redirect_to(*args, **kw):
         return _flask_redirect(_url)
     else:
         return _routes_redirect_to(_url)
-
+    '''
+ return _redirect_to(url_for(*args, **kw))
 
 @maintain.deprecated('h.url is deprecated please use h.url_for')
 @core_helper
