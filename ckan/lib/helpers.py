@@ -186,6 +186,9 @@ def redirect_to(*args, **kw):
     if is_flask_request():
         return _flask_redirect(_url)
     else:
+        print _url
+        print bytes(_url)
+        print str(_url)
         return _routes_redirect_to(_url)
 
 
