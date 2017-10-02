@@ -7993,7 +7993,7 @@ h4 small {
   [role=main],
   .main {
     padding-top: 10px;
-    background: #eeeeee url("../../../base/images/bg.png");
+    background: white !important;
   }
 }
 [role=main] {
@@ -8341,7 +8341,7 @@ h4 small {
   *zoom: 1;
   min-height: 30px;
   color: #ffffff;
-  background: #003647 url("../../../base/images/bg.png");
+  background: white !important;
 }
 .account-masthead:before,
 .account-masthead:after {
@@ -8433,7 +8433,7 @@ h4 small {
   *zoom: 1;
   min-height: 55px;
   color: #ffffff;
-  background: #005d7a url("../../../base/images/bg.png");
+  background: rgba(70, 121, 177, 1) !important ;
 }
 .masthead:before,
 .masthead:after {
