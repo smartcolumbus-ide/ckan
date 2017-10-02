@@ -1,7 +1,7 @@
 {% block header_wrapper %}
 {% block header_account %}
   <header class="account-masthead">
-    <div class="container">
+    <div class="container" style="margin-top:60px">
       {% block header_account_container_content %}
         {% if c.userobj %}
           <div class="account avatar authed" data-module="me" data-me="{{ c.userobj.id }}">
@@ -50,16 +50,33 @@
             </ul>
           </div>
         {% else %}
-          <nav class="account not-authed">
-            <ul class="unstyled">
+          <nav style="float:left">
+		 
+		  <a href="{{ h.url_for('http://dev.smartcolumbuside.com/') }}"><img src="../../../base/images/SMRTcolumbus_PMS_002.jpg" style="padding-bottom: 5px;"></a>
+		  <a href="{{ h.url_for('http://dev.smartcolumbuside.com/') }}"><img src="../../../base/images/170724_SmartColumbus_Namemark-01.jpg" style="padding-bottom: 5px;"></a>
+		 
+          <!--  <ul class="unstyled">
+		   
               {% block header_account_notlogged %}
               <li>{% link_for _('Log in'), controller='user', action='login' %}</li>
               {% if h.check_access('user_create') %}
                 <li>{% link_for _('Register'), controller='user', action='register', class_='sub' %}</li>
               {% endif %}
               {% endblock %}
-            </ul>
+            </ul>  -->
           </nav>
+		  <div style="float:right;font-family:'Gotham Bold';padding-top: 25px;">
+		  
+		  <ul>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/') }}">{{ _('HOME') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('https://ckan.dev.smartcolumbuside.com/dataset') }}">{{ _('DATASETS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/developers/') }}">{{ _('DEVELOPERS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/analytics/') }}">{{ _('ANALYTICS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/contact/') }}">{{ _('CONTACT') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://dev.smartcolumbuside.com/index.php/Login/') }}">{{ _('LOGIN') }}</a></li>
+
+</ul>
+		  </div>
         {% endif %}
       {% endblock %}
     </div>
@@ -82,10 +99,10 @@
 
       {% block header_logo %}
         {% if g.site_logo %}
-          <a class="logo" href="{{ h.url_for('home') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+         <!-- <a class="logo" href="{{ h.url_for('home') }}"><img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a> -->
         {% else %}
           <h1>
-            <a href="{{ h.url_for('home') }}">{{ g.site_title }}</a>
+           <!-- <a href="{{ h.url_for('home') }}">{{ g.site_title }}</a> -->
           </h1>
           {% if g.site_description %}<h2>{{ g.site_description }}</h2>{% endif %}
         {% endif %}
@@ -94,8 +111,18 @@
     </hgroup>
 
     <div class="nav-collapse collapse">
-
-      {% block header_site_navigation %}
+ <!-- <div style="float:right">
+		  
+		  <ul style="list-style-type: none;">
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com') }}">{{ _('Datasets') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://catalog.smartcolumbuside.com/dataset') }}">{{ _('Map Search') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/developers/') }}">{{ _('DEVELOPERS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/apps/') }}">{{ _('APPS') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/contact/') }}">{{ _('CONTACT') }}</a></li>
+</ul>
+		  </div> -->
+		  
+      <!-- {% block header_site_navigation %}
         <nav class="section navigation">
           <ul class="nav nav-pills">
             {% block header_site_navigation_tabs %}
@@ -108,9 +135,9 @@
             {% endblock %}
           </ul>
         </nav>
-      {% endblock %}
+      {% endblock %} -->
 
-      {% block header_site_search %}
+    <!--   {% block header_site_search %}
         <form class="section site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">
           <div class="field">
             <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
@@ -118,7 +145,18 @@
             <button class="btn-search" type="submit"><i class="icon-search"></i></button>
           </div>
         </form>
-      {% endblock %}
+      {% endblock %} -->
+<!-- 	  <div style="float:right">
+		  
+		  <ul style="list-style-type: none;">
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://catalog.smartcolumbuside.com/dataset') }}">{{ _('Datasets') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/mapbasedsearch') }}">{{ _('Map Search') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/data-requests/') }}">{{ _('Data Requests') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/publishers/') }}">{{ _('Publishers') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/site-analytics/') }}">{{ _('Site Analytics') }}</a></li>
+		  <li style="float:left;margin-right:20px;font-size:17px"><a href="{{ h.url_for('http://poc.smartcolumbuside.com/index.php/summary/') }}">{{ _('Summary') }}</a></li>
+</ul>
+		  </div> -->
 
     </div>
   </div>
